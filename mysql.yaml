@@ -1,0 +1,6 @@
+- name: To configure mysql
+  hosts: mysql
+  become: yes
+  Roles:
+  - mysql
+  
