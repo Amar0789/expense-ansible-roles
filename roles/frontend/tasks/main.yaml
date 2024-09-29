@@ -31,8 +31,8 @@
      remote_src: yes
 
   - name: To copy the config files
-    ansible.builtin.copy:
-     src: expense.conf
+    ansible.builtin.template:
+     src: frontend.service.j2
      dest: /etc/nginx/default.d/expense.conf
 
   - name: To restart the service
