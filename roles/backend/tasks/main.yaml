@@ -41,7 +41,6 @@
     ansible.builtin.copy:
      src: backend.service
      dest: /etc/systemd/system/backend.service
-     remote_src: yes 
 
   - name: To install pymysql
     ansible.builtin.pip:
